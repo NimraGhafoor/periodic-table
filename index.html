@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>HTML Periodic Table</title>
+    <title>Periodic Table</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
+            padding: none;
         }
 
         h2 {
@@ -16,29 +16,26 @@
         }
 
         .source {
-            /* text-align: right; */
             font-size: 12px;
-            margin: 0 40px 20px 0;
+            margin: 0 100px 5px 0;
+            border: none;
+            text-align: right;
         }
 
         table {
             border-collapse: collapse;
             margin: 0 auto 30px auto;
+            
         }
 
         td {
-            width: 60px;
-            height: 60px;
-            border: 1px solid #ccc;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #000000;
             text-align: center;
             padding: 4px;
             font-size: 12px;
         }
-
-        .source {
-            border: none;
-        }
-
         .empty {
             background: transparent;
             border: none;
@@ -57,19 +54,12 @@
             font-size: 10px;
             color: #666;
         }
-
-
         .group-label td {
             font-weight: bold;
             text-align: center;
+            vertical-align: text-bottom;
             background: transparent;
             border: none;
-        }
-
-        .series-label {
-            text-align: left;
-            font-weight: bold;
-            padding-top: 10px;
         }
     </style>
 </head>
@@ -91,12 +81,6 @@
             <td>8A</td>
         </tr>
 
-        <!-- <td class="source">
-                <div class="source">
-                <a href="http://chemistry.about.com">http://chemistry.about.com</a><br>
-                &copy;2012 Todd Helmenstine<br>About Chemistry
-                </div>
-            </td> -->
         <!-- Period 1 -->
         <tr>
             <td>
@@ -104,7 +88,12 @@
                 <div class="element">H</div>
                 <div class="weight">1.00794</div>
             </td>
-            <td colspan="16" class="empty"></td>
+            <td colspan="16" class="empty">
+                <div class="source">
+                <a href="http://chemistry.about.com">http://chemistry.about.com</a><br>
+                &copy;2012 Todd Helmenstine<br>About Chemistry
+                </div>
+            </td>
             <td>
                 <div class="number">2</div>
                 <div class="element">He</div>
@@ -401,7 +390,11 @@
                 <div class="element">Ba</div>
                 <div class="weight">137.33</div>
             </td>
-            <td class="empty"></td>
+            <td >
+                <div class="number">57-71</div>
+                <div class="weight">Lanthanides</div>
+
+            </td>
             <td>
                 <div class="number">72</div>
                 <div class="element">Hf</div>
@@ -491,7 +484,10 @@
                 <div class="element">Ra</div>
                 <div class="weight">(226)</div>
             </td>
-            <td class="empty"></td>
+            <td >
+                <div class="number">89-103</div>
+                <div class="weight">Actinides</div>
+            </td>
             <td>
                 <div class="number">104</div>
                 <div class="element">Rf</div>
@@ -575,7 +571,7 @@
             <!-- Lanthanides and Actinides -->
             <table>
                 <tr>
-                    <td class="empty" colspan="2"></td>
+                    <td class="empty" colspan="2"><label>Lanthanide</label></td>
                     <td class="lanthanide">
                         <div class="number">57</div>
                         <div class="element">La</div>
@@ -654,7 +650,7 @@
                 </tr>
 
                 <tr>
-                    <td class="empty" colspan="2"></td>
+                    <td class="empty" colspan="2"><label>Actinide</label></td>
                     <td class="actinide">
                         <div class="number">89</div>
                         <div class="element">Ac</div>
